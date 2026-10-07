@@ -1,0 +1,153 @@
+header {
+    background-color: #3c8527;
+    align-items: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+header {
+    grid-area: header;
+    color: #FFFFFF;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: #28651C;
+    grid-area: footer;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 39px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+aside {
+    grid-area: sidebar;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.left-section {
+    margin-bottom: 20px;
+    border-left: 4px solid #28651c;
+}
+
+.left-section h3 {
+    margin-left: 10px;
+}
+
+.blog-posts h2 {
+    font-size: 34px;
+    color: #28651C;
+}
+
+.blog-posts {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.blog-posts::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40px;            
+    right: 20px;           
+    height: 2px;
+    background-color: #ccc;
+}
+
+.blog-author {
+    color: #667267;
+}
+
+.blog-images {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-images.right-image {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.heading {
+    color: #28651C;
+
+}
+
+.links {
+    color: #2879B8;
+}
+
+.listing {
+    list-style-type: none;
+}
+
+.listing a {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+#about-me {
+    color: #333322;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+}
+
+#about-me-section {
+    background-color: #E2E8F0;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+header {
+    grid-area: header;
+    background-color: #3c8527;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 80%;
+    border: 4px solid #fff;
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: #28651C;
+    grid-area: footer;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
